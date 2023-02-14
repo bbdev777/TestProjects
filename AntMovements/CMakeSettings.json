@@ -1,0 +1,30 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${ProjectDir}\\out\\build-AntMovements-Release\\${name}",
+      "installRoot": "${ProjectDir}\\out\\Install-AntMovements\\${name}",
+      "cmakeToolchain": "${env.VCPKG_ROOT}\\scripts\\buildsystems\\vcpkg.cmake",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": []
+    },
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${ProjectDir}\\out\\build-AntMovements-Debug\\${name}",
+      "installRoot": "${ProjectDir}\\out\\Install-AntMovements\\${name}",
+      "cmakeToolchain": "${env.VCPKG_ROOT}\\scripts\\buildsystems\\vcpkg.cmake",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": []
+    }
+  ]
+}
